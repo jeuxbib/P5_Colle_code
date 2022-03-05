@@ -11,12 +11,12 @@ fetch("http://localhost:3000/api/products")
     /* Récupération de la réponse émise
     Fonction qui va afficher les objets dans le DOM automatiquement */
     .then(function (items) {
-        console.log(items);
+        // console.log(items);
 
         //Boucle pour afficher chaque article de tous les produits
         for (let article of items) {
             displayProduct(article);
-            console.log(article);
+            //console.log(article);
         }
     })
     //Intercepte la promesse rejetée et affiche message d'erreur
@@ -36,14 +36,16 @@ function displayProduct(article) {
     let productLink = document.createElement("a");
     document.querySelector(".items").appendChild(productLink);
     productLink.href = `product.html?id=${article._id}`;
-
+    
     let itemArticle = document.createElement("article");
     productLink.appendChild(itemArticle);
-
+    
     // Affiche image et texte alternatif
     let productImg = document.createElement("img");
     itemArticle.appendChild(productImg);
     productImg.src = article.imageUrl;
+    // console.log("product : " + productLink.href);
+    console.log("image : " + productImg.src);
     productImg.alt = article.altTxt;
 
     // Affichage du nom du produit
