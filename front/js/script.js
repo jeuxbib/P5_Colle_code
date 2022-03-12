@@ -11,12 +11,12 @@ fetch("http://localhost:3000/api/products")
     /* Récupération de la réponse émise
     Fonction qui va afficher les objets dans le DOM automatiquement */
     .then(function (items) {
-        // console.log(items);
+        console.log(items);
 
         //Boucle pour afficher chaque article de tous les produits
         for (let article of items) {
             displayProduct(article);
-            //console.log(article);
+            console.log(article);
         }
     })
     //Intercepte la promesse rejetée et affiche message d'erreur
