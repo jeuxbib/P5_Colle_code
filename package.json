@@ -1,5 +1,5 @@
 {
-  "name": "p5-dev-web-kanap",
+  "name": "P5_Colle_code",
   "version": "1.0.0",
   "description": "openclassrooms project 5 ",
   "main": "index.js",
@@ -10,10 +10,13 @@
     "type": "git",
     "url": "git+https://github.com/jeuxbib/P5_Colle_code.git"
   },
-  "author": "Valentin Mamichel",
+  "author": "Bruno Colle",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/jeuxbib/P5_Colle_code/issues"
   },
-  "homepage": "https://github.com/jeuxbib/P5_Colle_code#readme"
+  "homepage": "https://github.com/jeuxbib/P5_Colle_code#readme",
+  "dependencies": {
+    "express": "^4.17.3"
+  }
 }
